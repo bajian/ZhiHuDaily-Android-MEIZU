@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zhihu.daily.meizu.MainActivity" >
+
+    <item
+        android:id="@+id/action_theme"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_theme"
+        android:title="@string/action_theme"/>
+    
+    <item
+        android:id="@+id/action_category"
+        android:orderInCategory="99"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_category"
+        android:title="@string/action_theme"/>
+    
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="98"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_home"
+        android:title="@string/action_theme"/>
+
+</menu>

@@ -1,0 +1,97 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 日间主题 -->
+    <style name="Daily.Theme.AppTheme.Light" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionBarStyle">@style/Daily.Widget.ActionBar.Light</item>
+        <item name="startActivityBackground">@color/ab_background_light</item>
+        <item name="activityBackground">@color/ac_background_light</item>
+        <item name="drawerBackground">@color/drawer_bg_light</item>
+        <item name="navigationDivider">@color/navigation_divider_light</item>
+        <item name="downloadingButtonImage">@drawable/btn_menu_to_download</item>
+        <item name="switchDarkButtonImage">@drawable/btn_menu_night</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="listViewBackground">@color/list_view_bg_light</item>
+        <item name="bigImageMask">@drawable/mask</item>
+        <item name="listItemBackground">@drawable/card_light</item>
+        <item name="listItemIntroTextColor">@color/list_item_intro_light</item>
+        <item name="listItemHeaderBackground">@color/list_item_bg_light_normal</item>
+        <item name="themeEditorName">@color/theme_editor_name_light</item>
+        <item name="themeEditorBio">@color/theme_editor_bio_light</item>
+        <item name="newsToolbar">@drawable/news_toolbar_light</item>
+        <item name="commentNoCommentImageSource">@drawable/comment_empty</item>
+        <item name="commentNoCommentPromptTextColor">@color/comment_no_comment_prompt_text</item>
+        <item name="commentAuthorNameTextColor">@color/comment_item_author</item>
+        <item name="commentHeaderTitleTextColor">@color/comment_header</item>
+    </style>
+
+    <!-- 夜间主题 -->
+    <style name="Daily.Theme.AppTheme.Dark" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:actionBarStyle">@style/Daily.Widget.ActionBar.Dark</item>
+        <item name="startActivityBackground">@color/ab_background_dark</item>
+        <item name="activityBackground">@color/ac_background_dark</item>
+        <item name="drawerBackground">@color/drawer_bg_dark</item>
+        <item name="navigationDivider">@color/navigation_divider_dark</item>
+        <item name="downloadingButtonImage">@drawable/btn_menu_to_download_dark</item>
+        <item name="switchDarkButtonImage">@drawable/btn_menu_day</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="listViewBackground">@color/list_view_bg_dark</item>
+        <item name="bigImageMask">@drawable/mask</item>
+        <item name="listItemBackground">@drawable/card_dark</item>
+        <item name="listItemIntroTextColor">@color/list_item_intro_dark</item>
+        <item name="listItemHeaderBackground">@color/list_item_bg_dark_normal</item>
+        <item name="themeEditorName">@color/theme_editor_name_dark</item>
+        <item name="themeEditorBio">@color/theme_editor_bio_dark</item>
+        <item name="newsToolbar">@drawable/news_toolbar_dark</item>
+        <item name="commentNoCommentImageSource">@drawable/dark_comment_empty</item>
+        <item name="commentNoCommentPromptTextColor">@color/comment_no_comment_prompt_text_dark</item>
+        <item name="commentAuthorNameTextColor">@color/comment_item_author_dark</item>
+        <item name="commentHeaderTitleTextColor">@color/comment_header_dark</item>
+    </style>
+
+    <style name="Daily.Theme.NoActionBar" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- 日间actionbar -->
+    <style name="Daily.Widget.ActionBar.Light" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/ab_background_light</item>
+        <item name="android:backgroundSplit">@color/ab_background_light</item>
+        <item name="android:titleTextStyle">@style/Daily.TextAppearance.ActionBar.Title.Light</item>
+        <item name="android:indeterminateProgressStyle">@style/Daily.Actionbar.IndeterminateProgress</item>
+    </style>
+
+    <!-- 夜间actionbar -->
+    <style name="Daily.Widget.ActionBar.Dark" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/ab_background_dark</item>
+        <item name="android:backgroundSplit">@color/ab_background_dark</item>
+        <item name="android:titleTextStyle">@style/Daily.TextAppearance.ActionBar.Title.Dark</item>
+        <item name="android:indeterminateProgressStyle">@style/Daily.Actionbar.IndeterminateProgress</item>
+    </style>
+
+    <!-- 日间actionbar标题 -->
+    <style name="Daily.TextAppearance.ActionBar.Title.Light" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ab_title_light</item>
+    </style>
+
+    <!-- 夜间actionbar标题 -->
+    <style name="Daily.TextAppearance.ActionBar.Title.Dark" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ab_title_dark</item>
+    </style>
+
+    <!-- actionbar进度条样式 -->
+    <style name="Daily.Actionbar.IndeterminateProgress" parent="@android:style/Widget.ProgressBar">
+        <item name="android:maxWidth">32.0dip</item>
+        <item name="android:maxHeight">32.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_indeterminate</item>
+        <item name="android:indeterminateBehavior">cycle</item>
+        <item name="android:minWidth">32.0dip</item>
+        <item name="android:minHeight">32.0dip</item>
+    </style>
+
+</resources>

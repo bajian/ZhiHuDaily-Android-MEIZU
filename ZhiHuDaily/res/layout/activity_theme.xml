@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/theme_layout"
+    android:background="?listViewBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ListView
+        android:id="@id/theme_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?listViewBackground"
+        android:divider="@null"
+        android:dividerHeight="0.0dip"
+        android:listSelector="?listViewBackground"
+        android:scrollbarStyle="outsideOverlay" />
+
+</uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>

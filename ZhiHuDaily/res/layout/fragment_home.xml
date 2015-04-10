@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/home_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <com.zhihu.daily.meizu.widget.PullHeaderListView
+        android:id="@id/home_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?listViewBackground"
+        android:listSelector="?listViewBackground" />
+    
+<!-- 
+<ListView
+        android:id="@id/home_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?listViewBackground"
+        android:listSelector="?listViewBackground" />
+ -->
+    
+
+</uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>

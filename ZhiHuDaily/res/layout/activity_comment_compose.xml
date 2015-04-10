@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="?listViewBackground" >
+
+    <EditText
+        android:id="@id/comment_compose_editor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/comment_compose_bottombar"
+        android:gravity="top|left|center"
+        android:hint="@string/comment_compose_hint"
+        android:textSize="@dimen/text_size_medium" />
+
+    <LinearLayout
+        android:id="@id/comment_compose_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="?listItemHeaderBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="8.0dip"
+            android:text="@string/comment_prompt" />
+
+        <ImageView
+            android:id="@id/comment_share_to_sina_weibo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_comment_share_to_sina_cancel" />
+
+        <ImageView
+            android:id="@id/comment_share_to_tencent_weibo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_comment_share_to_tencent_cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

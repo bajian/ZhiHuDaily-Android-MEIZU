@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80.0dip"
+        android:src="@drawable/splash_logo" />
+
+    <TextView
+        android:id="@id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/login"
+        android:textColor="#ffd0f1ff"
+        android:textSize="@dimen/text_size_medium" />
+
+    <RelativeLayout
+        android:id="@id/sina_weibo_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_text"
+        android:layout_marginLeft="50.0dip"
+        android:layout_marginRight="50.0dip"
+        android:layout_marginTop="25.0dip"
+        android:background="@drawable/btn_rounded_corner"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="12.0dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@id/sina_weibo_textview"
+            android:src="@drawable/account_sina" />
+
+        <TextView
+            android:id="@id/sina_weibo_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/sina_weibo"
+            android:textColor="#ff333333"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/tencent_weibo_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sina_weibo_login"
+        android:layout_marginLeft="50.0dip"
+        android:layout_marginRight="50.0dip"
+        android:layout_marginTop="25.0dip"
+        android:background="@drawable/btn_rounded_corner"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="12.0dip"
+        android:paddingTop="12.0dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@id/tencent_weibo_textview"
+            android:src="@drawable/account_tencent" />
+
+        <TextView
+            android:id="@id/tencent_weibo_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tencent_weibo"
+            android:textColor="#ff333333"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20.0dip"
+        android:text="@string/login_right"
+        android:textColor="#ff52bdea"
+        android:textSize="@dimen/text_size_micro" />
+
+</RelativeLayout>

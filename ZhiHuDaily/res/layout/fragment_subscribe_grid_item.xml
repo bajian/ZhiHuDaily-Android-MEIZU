@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/fragment_subscribe_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical" >
+
+    <com.zhihu.daily.meizu.widget.DynamicImageView
+        android:id="@id/fragment_subscribe_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <com.zhihu.daily.meizu.widget.DynamicView
+        android:id="@id/fragment_subscribe_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/subscribe_mask" />
+
+    <LinearLayout
+        android:id="@id/fragment_subscribe_text_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16.0dip"
+        android:layout_marginLeft="@dimen/subscribe_grid_divider_margin"
+        android:layout_marginRight="@dimen/subscribe_grid_divider_margin"
+        android:layout_marginTop="16.0dip"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/subscribe_theme_title_divider" />
+
+        <TextView
+            android:id="@id/fragment_subscribe_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16.0dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/subscribe_theme_title_divider" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/fragment_subscribe_subscribe_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_subscribe"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@id/fragment_subscribe_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8.0dip"
+            android:src="@drawable/management_add" />
+    </RelativeLayout>
+
+</RelativeLayout>

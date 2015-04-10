@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200.0dip" >
+
+        <ImageView
+            android:id="@id/theme_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_top_default" />
+
+        <TextView
+            android:id="@id/theme_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:shadowColor="@color/black"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@id/theme_image_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:shadowColor="#80000000"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:textColor="#b3ffffff"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_size_micro" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/theme_editor_list_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="?android:listDivider" />
+
+    <ListView
+        android:id="@id/theme_editor_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="3.0dip"
+        android:clickable="false"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0.0dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:headerDividersEnabled="true"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginBottom="12.0dip"
+        android:background="?android:listDivider" />
+
+</LinearLayout>

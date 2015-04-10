@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/favorite_listview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?listViewBackground"
+    android:divider="@null"
+    android:dividerHeight="0.0dip"
+    android:listSelector="?listViewBackground"
+    android:scrollbarStyle="outsideOverlay" />

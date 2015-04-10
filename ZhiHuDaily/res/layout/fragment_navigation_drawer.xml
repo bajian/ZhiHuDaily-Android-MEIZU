@@ -1,0 +1,14 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/navigation_drawer_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?drawerBackground"
+    android:choiceMode="singleChoice"
+    android:divider="?navigationDivider"
+    android:dividerHeight="@dimen/list_divider_height"
+    android:footerDividersEnabled="false"
+    android:headerDividersEnabled="false"
+    android:scrollbars="none"
+    tools:context="com.zhihu.daily.meizu.fragment.NavigationDrawerFragment" />
+
