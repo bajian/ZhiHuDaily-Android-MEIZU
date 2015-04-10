@@ -3,10 +3,8 @@ ZhiHuDaily-Android-MEIZU
 
 仿知乎日报，适配魅族的smartBar
 
-![github](extra/1.jpg "github") 
-![github](extra/2.jpg "github") 
-![github](extra/3.jpg "github") 
-![github](extra/4.jpg "github") 
+![github](extra/1.jpg "github") ![github](extra/2.jpg "github") 
+![github](extra/3.jpg "github") ![github](extra/4.jpg "github") 
 ![github](extra/5.jpg "github") 
 ![github](extra/6.jpg "github") 
 ![github](extra/7.jpg "github") 
